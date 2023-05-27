@@ -1,6 +1,6 @@
 <?php
 /** Check if a spammer is filling out the form. if the field check was filled out that means a Spammer is attempting to autofill the form **/
-if(isset($_POST['check']){
+if(!empty($_POST['check'])){
 	/** kill the script **/
 	die("Anti Spam");
 	exit();
